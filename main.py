@@ -46,21 +46,21 @@ bot_adi = "@SpiderOyunBot"
 if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
     #kaç yaşındasın bot
     print("kyb")
-    bot_adi = "@TuranOyunBot"
+    bot_adi = "TuranOyunBot"
     bot_token = "6093505114:AAHjdnMJWL9pKW3pf5BouHwRLwBojXsqmCE"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 else:
     #sıl octopus bot
-    bot_adi = "@TuranOyunBot"
+    bot_adi = "TuranOyunBot"
     bot_token = "6093505114:AAHjdnMJWL9pKW3pf5BouHwRLwBojXsqmCE"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 
 temp = {}
 
 
-kurucu_id = 5637445914
+kurucu_id = 6960862388
 
-admins = [kurucu_id, 5637445914]
+admins = [kurucu_id, 6960862388]
 
 zaman_hassasiyeti = pow(10,6)
 
@@ -482,9 +482,9 @@ def draw_graph(x,y, **kwargs):
         plt.scatter(x, y, marker='x', color='red')
     plt.savefig('base.jpg', format='jpg')
 
-    if (kwargs.get("chat_id", "-1001757371836")!="-1001911914546"):
+    if (kwargs.get("chat_id", "-1002057111740")!="-1002057111740"):
         #bot.send_photo(kwargs.get("chat_id", ""), photo=open('base.jpg', 'rb'))
-        bot.send_document(kwargs.get("chat_id", "-1001911914546"), document=open('base.jpg', 'rb'))
+        bot.send_document(kwargs.get("chat_id", "-1002057111740"), document=open('base.jpg', 'rb'))
         os.remove("base.jpg")
 
 def skor_arttir(neyi,artis=1, **kwargs):
@@ -499,7 +499,7 @@ def skor_arttir(neyi,artis=1, **kwargs):
         return skor_getir
 
 async def log_gonder(**kwargs):
-    chat_id = kwargs.get('chat_id','-1001911914546')
+    chat_id = kwargs.get('chat_id','-1002057111740')
 
     #grup_link = ""
     #try:    
@@ -512,7 +512,7 @@ async def log_gonder(**kwargs):
 
 
     try:
-        await bot.send_message(-1001911914546, f"""
+        await bot.send_message(-1002057111740, f"""
 <b> ~~ 📢 Log Kaydı ~~</b>
 
 Grup: <code>{f(f"groups.{chat_id}.username")}</code>
@@ -527,7 +527,7 @@ Fəaliyyət: <code>{kwargs.get('eylem','')}</code>
         #else:
         #    bot.send_message(kurucu_id, str(e))
     try:
-        await bot.set_chat_title(-1001911914546, f"Bot Log - {len(oyunlar)}")
+        await bot.set_chat_title(-1002057111740, f"Bot Log - {len(oyunlar)}")
     except Exception as e:
         if "chat not found" in str(e):
             pass
@@ -1985,7 +1985,7 @@ async def callback_inline(cagri): #çağrıcı cagrici
         grup_username = grup_username.replace("'","")
 
         if f(f"groups.{chat_id}.username") == "":
-            await bot.send_message(-1001911914546, f"📜 {grup_username} ⟶ {len(f('groups')) + 1}")
+            await bot.send_message(-1002057111740, f"📜 {grup_username} ⟶ {len(f('groups')) + 1}")
             
         f(f"groups.{chat_id}.username", grup_username) 
         f(f"groups.{chat_id}.son_oyun_aktivitesi", time.time())
