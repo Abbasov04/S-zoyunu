@@ -47,12 +47,12 @@ if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
     #kaç yaşındasın bot
     print("kyb")
     bot_adi = "ForzaWordBot"
-    bot_token = "6965368377:AAGBSKbJLNa4eR9YrLM5iSW5imFUUvC8bGs"
+    bot_token = "6733094468:AAF-h490JD5aKrOWxvcmF9xeJO07VeIfzW4"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 else:
     #sıl octopus bot
     bot_adi = "ForzaWordBot"
-    bot_token = "6965368377:AAGBSKbJLNa4eR9YrLM5iSW5imFUUvC8bGs"
+    bot_token = "6733094468:AAF-h490JD5aKrOWxvcmF9xeJO07VeIfzW4"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 
 temp = {}
