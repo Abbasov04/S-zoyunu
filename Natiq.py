@@ -1,1 +1,1 @@
-``` Reponu KimsƏsə Verən Peysərdi ! ```
+Reponu KimsƏsə Verən Peysərdi ! 
