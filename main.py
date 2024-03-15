@@ -93,7 +93,7 @@ db={}
 def dbGetir():
     global db
     with open(ayarDosyasi, encoding='utf-8') as json_file:
-        db = json.load(jso n_file)
+        db = json.load(json_file)
 
 def dbYaz():
     global db
