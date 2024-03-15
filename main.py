@@ -41,18 +41,18 @@ import requests
 #warnings.filterwarnings("ignore")
 
 
-bot_adi = "ForzaWordBot"
+bot_adi = "GtaCrocodileGame"
 
 if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
     #kaç yaşındasın bot
     print("kyb")
-    bot_adi = "ForzaWordBot"
-    bot_token = "6733094468:AAF-h490JD5aKrOWxvcmF9xeJO07VeIfzW4"
+    bot_adi = "GtaCrocodileGame"
+    bot_token = "6874244304:AAEjs7ZjxEn2kGobIWdCne7MQxAIkeR5JDQ"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 else:
     #sıl octopus bot
-    bot_adi = "ForzaWordBot"
-    bot_token = "6733094468:AAF-h490JD5aKrOWxvcmF9xeJO07VeIfzW4"
+    bot_adi = "GtaCrocodileGame"
+    bot_token = "6874244304:AAEjs7ZjxEn2kGobIWdCne7MQxAIkeR5JDQ"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 
 temp = {}
@@ -93,7 +93,7 @@ db={}
 def dbGetir():
     global db
     with open(ayarDosyasi, encoding='utf-8') as json_file:
-        db = json.load(json_file)
+        db = json.load(jso n_file)
 
 def dbYaz():
     global db
