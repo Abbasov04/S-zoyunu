@@ -573,7 +573,7 @@ async def start_private(message): #, **kwargs
             callback_button2 = types.InlineKeyboardButton(text="⚙️ Rəsmi kanal ⚙️", url="https://t.me/KrayzenBots")
             keyboard.add(callback_button)
             keyboard.add(callback_button2)
-            await bot.send_message(chat_id, f'<b>✋🏻 Salam, mən oyun botuyam.\n\n🎯 Müxtəlif oyunlar oynamaq və əylənmək üçün mənimlə oynaya bilərsiniz.\n\n⚙️ Məni qrupa əlavə edin və mənimlə oynamaq üçün məni Admin et. \n\n **Sahibim** @NatiqOwner </b>',  reply_markup=keyboard)
+            await bot.send_message(chat_id, f'<b>✋🏻 Salam, mən oyun botuyam.\n\n🎯 Müxtəlif oyunlar oynamaq və əylənmək üçün mənimlə oynaya bilərsiniz.\n\n⚙️ Məni qrupa əlavə edin və mənimlə oynamaq üçün məni Admin et. \n\n Sahibim @NatiqOwner </b>',  reply_markup=keyboard)
 
 
 
