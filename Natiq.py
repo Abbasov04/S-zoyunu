@@ -1,1 +1,0 @@
-Reponu KimsƏsə Verən Peysərdi ! 
