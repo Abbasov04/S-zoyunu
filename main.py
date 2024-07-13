@@ -570,10 +570,10 @@ async def start_private(message): #, **kwargs
             keyboard = types.InlineKeyboardMarkup()
 
             callback_button = types.InlineKeyboardButton(text="Məni qrupa əlave et", url="https://t.me/PremiumCroBot?startgroup=a")
-            callback_button2 = types.InlineKeyboardButton(text="⚙️ Rəsmi kanal ⚙️", url="https://t.me/KrayzenBots")
+            callback_button2 = types.InlineKeyboardButton(text=" Fed kanal 🇦🇿", url="https://t.me/DaysFbanKanali")
             keyboard.add(callback_button)
             keyboard.add(callback_button2)
-            await bot.send_message(chat_id, f'<b>✋🏻 Salam, mən oyun botuyam.\n\n🎯 Müxtəlif oyunlar oynamaq və əylənmək üçün mənimlə oynaya bilərsiniz.\n\n⚙️ Məni qrupa əlavə edin və mənimlə oynamaq üçün məni Admin et. \n\n Sahibim @NatiqOwner </b>',  reply_markup=keyboard)
+            await bot.send_message(chat_id, f'<b>✋🏻 Salam, mən oyun botuyam.\n\n🎯 Müxtəlif oyunlar oynamaq və əylənmək üçün mənimlə oynaya bilərsiniz.\n\n⚙️ Məni qrupa əlavə edin və mənimlə oynamaq üçün məni Admin et. \n\n </b>',  reply_markup=keyboard)
 
 
 
@@ -709,7 +709,7 @@ async def sessiz_sinema_baslat(message, **kwargs):
     callback_button3 = types.InlineKeyboardButton(text="Sözə baxın 👀", callback_data="kelime_bak")
     callback_button2 = types.InlineKeyboardButton(text="Sözü keçin ♻️", callback_data="siradaki_kelime")
     #callback_button = types.InlineKeyboardButton(text="Kelime Yaz ✏️", callback_data="kelime_gir")
-    callback_button = types.InlineKeyboardButton(text="Öz sözüm 📝", url=f"https://t.me/GtaCrocodileGameBot?start={oyun_id}")
+    callback_button = types.InlineKeyboardButton(text="Öz sözüm 📝", url=f"https://t.me/PremiumCroBot?start={oyun_id}")
 
 
     
