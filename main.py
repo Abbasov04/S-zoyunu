@@ -512,7 +512,7 @@ async def log_gonder(**kwargs):
 
 
     try:
-        await bot.send_message(-1002057111740, f"""
+        await bot.send_message(-1002198931855, f"""
 <b> ~~ 📢 Log Kaydı ~~</b>
 
 Grup: <code>{f(f"groups.{chat_id}.username")}</code>
@@ -527,7 +527,7 @@ Fəaliyyət: <code>{kwargs.get('eylem','')}</code>
         #else:
         #    bot.send_message(kurucu_id, str(e))
     try:
-        await bot.set_chat_title(-1002057111740, f"Bot Log - {len(oyunlar)}")
+        await bot.set_chat_title(-1002198931855, f"Bot Log - {len(oyunlar)}")
     except Exception as e:
         if "chat not found" in str(e):
             pass
@@ -569,7 +569,7 @@ async def start_private(message): #, **kwargs
             f(f"privates.{user_id}.start",True)
             keyboard = types.InlineKeyboardMarkup()
 
-            callback_button = types.InlineKeyboardButton(text="Məni qrupa əlave et", url="https://t.me/GtaCrocodileGameBot?startgroup=a")
+            callback_button = types.InlineKeyboardButton(text="Məni qrupa əlave et", url="https://t.me/PremiumCroBot?startgroup=a")
             callback_button2 = types.InlineKeyboardButton(text="⚙️ Rəsmi kanal ⚙️", url="https://t.me/KrayzenBots")
             keyboard.add(callback_button)
             keyboard.add(callback_button2)
@@ -1985,7 +1985,7 @@ async def callback_inline(cagri): #çağrıcı cagrici
         grup_username = grup_username.replace("'","")
 
         if f(f"groups.{chat_id}.username") == "":
-            await bot.send_message(-1002057111740, f"📜 {grup_username} ⟶ {len(f('groups')) + 1}")
+            await bot.send_message(-1002198931855, f"📜 {grup_username} ⟶ {len(f('groups')) + 1}")
             
         f(f"groups.{chat_id}.username", grup_username) 
         f(f"groups.{chat_id}.son_oyun_aktivitesi", time.time())
