@@ -41,26 +41,26 @@ import requests
 #warnings.filterwarnings("ignore")
 
 
-bot_adi = "GtaCrocodileGame"
+bot_adi = "PremiumCroBot"
 
 if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
     #kaç yaşındasın bot
     print("kyb")
-    bot_adi = "GtaCrocodileGame"
-    bot_token = "6874244304:AAEjs7ZjxEn2kGobIWdCne7MQxAIkeR5JDQ"
+    bot_adi = "PremiumCroBot"
+    bot_token = "7461854917:AAEN7yF2SrsbCG1hq0sLtTycMgcjciIgU_c"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 else:
     #sıl octopus bot
-    bot_adi = "GtaCrocodileGame"
-    bot_token = "6874244304:AAEjs7ZjxEn2kGobIWdCne7MQxAIkeR5JDQ"
+    bot_adi = "PremiumCroBot"
+    bot_token = "7461854917:AAEN7yF2SrsbCG1hq0sLtTycMgcjciIgU_c"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 
 temp = {}
 
 
-kurucu_id = 6960862388
+kurucu_id = 7287936548
 
-admins = [kurucu_id, 6960862388]
+admins = [kurucu_id, 7287936548]
 
 zaman_hassasiyeti = pow(10,6)
 
