@@ -482,9 +482,9 @@ def draw_graph(x,y, **kwargs):
         plt.scatter(x, y, marker='x', color='red')
     plt.savefig('base.jpg', format='jpg')
 
-    if (kwargs.get("chat_id", "-1002057111740")!="-1002057111740"):
+    if (kwargs.get("chat_id", "-1002198931855")!="-1002198931855"):
         #bot.send_photo(kwargs.get("chat_id", ""), photo=open('base.jpg', 'rb'))
-        bot.send_document(kwargs.get("chat_id", "-1002057111740"), document=open('base.jpg', 'rb'))
+        bot.send_document(kwargs.get("chat_id", "-1002198931855"), document=open('base.jpg', 'rb'))
         os.remove("base.jpg")
 
 def skor_arttir(neyi,artis=1, **kwargs):
@@ -499,7 +499,7 @@ def skor_arttir(neyi,artis=1, **kwargs):
         return skor_getir
 
 async def log_gonder(**kwargs):
-    chat_id = kwargs.get('chat_id','-1002057111740')
+    chat_id = kwargs.get('chat_id','-1002198931855')
 
     #grup_link = ""
     #try:    
